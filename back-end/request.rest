@@ -1,0 +1,37 @@
+GET http://localhost:5000/stories
+
+###
+GET http://localhost:5000/stories/9
+
+###
+POST http://localhost:5000/stories
+Content-Type: application/json
+
+{
+    "title":"Atomic Habits", 
+    "author": "James Clark", 
+    "synopsis": "Take action from now", 
+    "category": "Technology", 
+    "cover": "img/..", 
+    "tags": "self development", 
+    "status": "Aktif"
+}
+
+###
+PATCH http://localhost:5000/stories/9
+Content-Type: application/json
+
+{
+    "title":"You Do You", 
+    "author": "James Wilson", 
+    "synopsis": "Take action from now", 
+    "category": "Technology", 
+    "cover": "img/..", 
+    "tags": "self improvement", 
+    "status": "Aktif"
+}
+
+
+###
+DELETE  http://localhost:5000/stories/11
+
